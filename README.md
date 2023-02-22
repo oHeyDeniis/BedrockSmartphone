@@ -1,5 +1,5 @@
 # BedrockUiManager
-Allow smartphone with custom json UI and plugin add-ons
+Allow create custom json UI in Pocketmine
 
 # Create custom ui's
 
