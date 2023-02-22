@@ -1,0 +1,16 @@
+{
+  "namespace": "custom_ui_example",
+
+  "main": {
+    "type": "panel",
+    "size": [200, 200],
+    "controls": [
+      {
+        "simple_text": {
+          "type": "label",
+          "text": "hello world!"
+        }
+      }
+    ]
+  }
+}

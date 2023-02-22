@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "BedrockSmartphone",
+        "description": "Texture to implement smartphones in MCBE by CustomUI",
+        "uuid": "7f6b9838-998e-1feb-c0c3-e879f59a356b",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Texture to implement smartphones in MCBE by CustomUI",
+            "type": "resources",
+            "uuid": "ac024a63-b001-0066-06e2-7816b481e404",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}

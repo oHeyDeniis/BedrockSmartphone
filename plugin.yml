@@ -1,0 +1,15 @@
+name: BedrockUiManager
+main: oheydeniis\bs\Main
+version: 1.1.0
+api: 4.0.0
+load: STARTUP
+authors:
+  - oHeyDeniis]
+commands:
+  bum:
+    description: aaaa
+    permission: sla.sla
+permissions:
+  sla.sla:
+    description: a
+    default: true
