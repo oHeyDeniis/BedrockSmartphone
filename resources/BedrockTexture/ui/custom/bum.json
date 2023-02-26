@@ -1,0 +1,37 @@
+{
+  "namespace": "bum",
+
+  "teste": {
+    "type": "panel"
+  },
+  /*Create a simple panel with background image*/
+  "background_panel": {
+    "type": "panel",
+    "size": [100, 100],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$content_control|default": "bum.background_panel_control",
+    "$background_image|default": "textures/custom/ui_background",
+    "controls": [
+      {
+        "background_image@bum_utils.simple_image": {
+          "$texture": "$background_image"
+        }
+      },
+      {
+        "insider_content@$$content_control": {
+          "layer": 1
+        }
+      }
+    ]
+  },
+  "background_panel_control": {
+    "type": "label",
+    "text": "sla"
+  },
+  "simple_image": {
+    "type": "image",
+    "texture": "$texture",
+    "layer": 0
+  }
+}

@@ -2,6 +2,8 @@
 
 namespace oheydeniis\bs;
 
+use oheydeniis\bs\elements\Panel;
+use oheydeniis\bs\elements\Text;
 use oheydeniis\bs\form\LongForm;
 use oheydeniis\bs\texture\CustomUI;
 use oheydeniis\bs\texture\data\LongFormData;
@@ -27,6 +29,22 @@ class Main extends PluginBase implements Listener
         $customUI->loadFrom($this->getDataFolder()."test.json");
         $this->getTextureManager()->getServerFormManager()->getLongFormData()->addUI($customUI);
         $this->getTextureManager()->getServerFormManager()->save();
+    }
+    public function createCustomUi(){
+        $ui = new \oheydeniis\bs\elements\CustomUI("simple_ui");
+
+        $text = new Text();
+        $text
+            ->setText("sla teste");
+
+        $mainPanel = new Panel();
+        $mainPanel
+            ->setSize(200, 150)
+            ->setAnchors($mainPanel::ANCHOR_CENTER, $mainPanel::ANCHOR_CENTER)
+            ->addElement("simple_text", $text)
+        ;
+
+        $ui->addUiElement("main", $mainPanel);
     }
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
